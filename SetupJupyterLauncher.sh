@@ -11,7 +11,7 @@ YOUR_HOST_IP=`hostname -I`
 # .desktop file
 touch ${TMP}
 echo [Desktop Entry] > ${TMP}
-echo Name=MyJupyterLab >> ${TMP}
+echo Name=JupyterLab >> ${TMP}
 echo -e "Exec=sh -c \"${YOUR_JUPYTER} lab --ip ${YOUR_HOST_IP}\"" >> ${TMP}
 echo Type=Application >> ${TMP}
 echo Categories=Application >> ${TMP}
